@@ -1,0 +1,28 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+        <Schema
+            xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+            xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="IssuesModel">
+            <EntityType Name="Issue">
+                <Key>
+                    <PropertyRef Name="IssueId"/>
+                </Key>
+                <Property Name="IssueId" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="true"/>
+                <Property Name="SalesOrderNumber" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="true"/>
+                <Property Name="IssueDescription" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false"/>
+                <Property Name="SalesOrderItemNumber" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false"/>
+                <Property Name="NPSId" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false"/>
+                <Property Name="DetailSalesOrderItemNumber" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false"/>
+                <Property Name="DetailSalesOrderItemNumber" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false"/>
+            </EntityType>
+            <EntityContainer Name="IssueEntities" m:IsDefaultEntityContainer="true"
+                xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+                <EntitySet EntityType="IssuesModel.Issue" Name="Issues"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

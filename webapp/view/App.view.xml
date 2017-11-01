@@ -1,0 +1,13 @@
+<mvc:View
+		controllerName="basf.salesorderissue.controller.App"
+		xmlns:mvc="sap.ui.core.mvc"
+		displayBlock="true"
+		xmlns="sap.m">
+		<NavContainer id="navCon">
+			<pages>
+				<App id="FullScreen"/>
+				<SplitApp id="idAppControl" />
+			</pages>
+		</NavContainer>
+	
+</mvc:View>
